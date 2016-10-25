@@ -2,7 +2,7 @@ const range = require('lodash.range');
 const fs = require('fs');
 
 const PASSWORD_LENGTH = 15;
-const randomizedNums = (nums, length) => nums.map(num => Math.floor(Math.random()*length));
+const randomizedNums = (nums, dictionarySize) => nums.map(num => Math.floor(Math.random()*dictionarySize));
 const generatePassword = n => {
     const nums = range(n);
 
